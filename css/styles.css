@@ -1,0 +1,487 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    background-color: #f7f1e8;
+    color: #3e2723;
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                  HEADER                                    */
+/* -------------------------------------------------------------------------- */
+
+header {
+    width: 100%;
+    background-color: #4e342e;
+    color: #fff8f0;
+    padding: 1rem 4rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > a {
+    text-decoration: none;
+}
+
+nav img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 0.3rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+
+nav ul a {
+    color: #fff8f0;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul a:hover {
+    color: #d7b899;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                    MAIN                                    */
+/* -------------------------------------------------------------------------- */
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+    flex: 1;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin: 3rem 0 2rem;
+    color: #4e342e;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    margin: 3rem 0 2rem;
+    color: #6f4e37;
+}
+
+
+h3 {
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: #4e342e;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                    HOME                                    */
+/* -------------------------------------------------------------------------- */
+
+#inicio {
+    width: 100vw;
+    min-height: 55vh;
+    margin-left: calc(50% - 50vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5rem 2rem;
+    background:
+        linear-gradient(
+            rgba(62, 39, 35, 0.55),
+            rgba(62, 39, 35, 0.55)
+        ),
+        url("../imgenes/cafey\ granos.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+
+#inicio h1 {
+    color: #fff8f0;
+    font-size: 5rem;
+}
+
+#inicio p {
+    color: #fff8f0;
+    font-size: 2rem;
+    max-width: 65rem;
+    margin: 0 auto 2.5rem;
+}
+
+
+#inicio a,
+#ver-productos a {
+    display: inline-block;
+    background-color: #c69c6d;
+    color: #3e2723;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 1.3rem 2.5rem;
+    border-radius: 0.8rem;
+    transition: background-color 0.3s ease;
+}
+
+
+#inicio a:hover,
+#ver-productos a:hover {
+    background-color: #d7b899;
+}
+
+
+/* sobre nosotros*/
+
+#nosotros {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    padding: 6rem 0;
+}
+
+#nosotros > div {
+    flex: 1;
+}
+
+#nosotros p {
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+#nosotros img {
+    width: 100%;
+    max-width: 45rem;
+    display: block;
+    margin: 0 auto;
+    border-radius: 1.2rem;
+    object-fit: cover;
+}
+
+/* Destacados */
+
+#destacados {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+#destacados h2 {
+    width: 100%;
+}
+
+/* Tarjetas */
+
+#destacados article {
+    background-color: #fff8f0;
+    width: 28rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    padding-bottom: 2rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(62, 39, 35, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+
+#destacados article img {
+    width: 100%;
+    height: 22rem;
+    object-fit: cover;
+}
+
+
+#destacados article p {
+    padding: 0 1.5rem;
+    line-height: 1.5;
+}
+
+#ver-productos {
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+#ver-productos p {
+    margin-bottom: 2rem;
+}
+
+
+#productos {
+    padding-top: 2rem;
+}
+
+#productos > p {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+
+/* catalogo  de productos */
+
+.catalogo-productos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+
+/* Producto */
+
+.producto {
+    background-color: #fff8f0;
+    width: 28rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    padding-bottom: 2rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(62, 39, 35, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+
+.producto img {
+    width: 100%;
+    height: 22rem;
+    object-fit: cover;
+}
+
+
+.producto p {
+    padding: 0 1.5rem;
+    line-height: 1.5;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                CONTACTO                                  */
+/* -------------------------------------------------------------------------- */
+
+#contacto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+#contacto > p {
+    max-width: 60rem;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+}
+
+
+/* Formulario */
+
+#contacto form {
+    background-color: #fff8f0;
+    width: 100%;
+    max-width: 50rem;
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 3rem rgba(62, 39, 35, 0.15);
+    text-align: left;
+}
+
+
+#contacto form > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+
+#contacto label {
+    font-weight: 600;
+    color: #4e342e;
+}
+
+
+#contacto input,
+#contacto textarea {
+    width: 100%;
+    padding: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    color: #3e2723;
+    background-color: #f7f1e8;
+    border: 0.2rem solid #d7b899;
+    border-radius: 0.8rem;
+    outline: none;
+}
+
+
+#contacto input:focus,
+#contacto textarea:focus {
+    border-color: #6f4e37;
+}
+
+
+#contacto textarea {
+    min-height: 12rem;
+    resize: vertical;
+}
+
+
+/* Botón */
+
+#contacto button {
+    width: 100%;
+    border: none;
+    background-color: #6f4e37;
+    color: #fff8f0;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 1.3rem;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+#contacto button:hover {
+    background-color: #4e342e;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                  FOOTER                                    */
+/* -------------------------------------------------------------------------- */
+
+footer {
+    width: 100%;
+    background-color: #4e342e;
+    color: #fff8f0;
+    padding: 2rem 4rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+footer p {
+    font-size: 1.4rem;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                              MEDIA QUERIES                                 */
+/* -------------------------------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+    main {
+        width: 92%;
+    }
+
+
+    header {
+        padding: 1rem 2rem;
+    }
+
+
+    nav {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+
+    nav img {
+        width: 8rem;
+    }
+
+
+    #inicio {
+        min-height: 45vh;
+        padding: 3rem 1.5rem;
+    }
+
+
+    #inicio h1 {
+        font-size: 3.2rem;
+    }
+
+
+    #inicio p {
+        font-size: 1.7rem;
+    }
+
+
+    #nosotros {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    #destacados article,
+    .producto {
+        width: 100%;
+        max-width: 35rem;
+    }
+
+
+    #contacto form {
+        padding: 2rem;
+    }
+
+
+    footer {
+        padding: 2rem;
+    }
+
+}

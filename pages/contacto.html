@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Contacto | Cafe & Sabor</title>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <a href="../index.html"> <img src="../imgenes/logo.avif" alt="Logo de Cafe & Sabor"></a>
+            <ul>
+                <li><a href="../index.html">Inicio</a> </li> 
+                <li> <a href="./productos.html">Productos</a> </li>
+                <li><a href="./contacto.html">Contacto</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- MAIN -->
+    <main>
+
+        <section id="contacto">
+
+            <h1>Contactanos</h1>
+            <p> ¿Tenes alguna consulta? Escribinos y nos pondremos en contacto con vos.</p>
+
+
+            <!-- FORMULARIO -->
+            <form action="https://formspree.io/f/xjykzavn" method="POST">
+
+                <div>
+                    <label for="nombre"> Nombre </label>
+
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Ingresá tu nombre"
+                        required >
+                </div>
+
+
+                <div>
+                    <label for="email"> Correo electrónico </label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Ingresá tu correo"
+                        required >
+                </div>
+
+
+                <div>
+
+                    <label for="mensaje"> Mensaje </label>
+
+                    <textarea
+                        id="mensaje"
+                        name="mensaje"
+                        rows="6"
+                        placeholder="Escribí tu mensaje"
+                        required
+                    ></textarea>
+
+                </div>
+
+                <button type="submit">
+                    Enviar mensaje
+                </button>
+
+            </form>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Cafe & Sabor</p>
+        <p>Un rinconcito para disfrutar de un buen cafe.</p>
+        <p>Sitio web realizado por Angie</p>
+    </footer>
+
+</body>
+
+</html>
