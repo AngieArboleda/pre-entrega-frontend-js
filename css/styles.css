@@ -11,7 +11,7 @@ html {
 
 body {
     font-family: "Poppins", sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     background-color: #f7f1e8;
     color: #3e2723;
     display: flex;
@@ -61,7 +61,7 @@ nav ul {
 nav ul a {
     color: #fff8f0;
     text-decoration: none;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     font-weight: 500;
     transition: color 0.3s ease;
 }
@@ -291,7 +291,7 @@ h3 {
 
 .producto p {
     padding: 0 1.5rem;
-    line-height: 1.5;
+    line-height: 1.7;
 }
 
 
